@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CryptoDCACalculator.Views.LoginPage"
+             Title="Crypto DCA Calculator - Login"
+             BackgroundColor="#1a1a1a">
+
+    <ScrollView>
+        <StackLayout Padding="40,60,40,40" Spacing="30">
+            
+            <!-- Logo/Title -->
+            <StackLayout HorizontalOptions="Center">
+                <Label Text="💰" FontSize="60" HorizontalOptions="Center" TextColor="#FFD700" />
+                <Label Text="Crypto DCA Calculator" 
+                       FontSize="24" 
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center" 
+                       TextColor="White" />
+                <Label Text="Track your Dollar Cost Averaging investments" 
+                       FontSize="14" 
+                       HorizontalOptions="Center" 
+                       TextColor="#B0B0B0" 
+                       Margin="0,5,0,0" />
+            </StackLayout>
+
+            <!-- Login Form -->
+            <Frame BackgroundColor="#2d2d2d" 
+                   BorderColor="#404040" 
+                   CornerRadius="10" 
+                   Padding="25">
+                
+                <StackLayout Spacing="20">
+                    <Label Text="Sign In" 
+                           FontSize="20" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           HorizontalOptions="Center" />
+                    
+                    <!-- Email Entry -->
+                    <StackLayout>
+                        <Label Text="Email" TextColor="#B0B0B0" FontSize="14" />
+                        <Entry x:Name="EmailEntry" 
+                               Placeholder="Enter your email"
+                               PlaceholderColor="#808080"
+                               TextColor="White"
+                               BackgroundColor="#404040"
+                               Keyboard="Email" />
+                    </StackLayout>
+                    
+                    <!-- Password Entry -->
+                    <StackLayout>
+                        <Label Text="Password" TextColor="#B0B0B0" FontSize="14" />
+                        <Entry x:Name="PasswordEntry" 
+                               Placeholder="Enter your password"
+                               PlaceholderColor="#808080"
+                               TextColor="White"
+                               BackgroundColor="#404040"
+                               IsPassword="True" />
+                    </StackLayout>
+                    
+                    <!-- Error Message -->
+                    <Label x:Name="ErrorLabel" 
+                           TextColor="#FF6B6B" 
+                           FontSize="12" 
+                           IsVisible="False" 
+                           HorizontalOptions="Center" />
+                    
+                    <!-- Login Button -->
+                    <Button x:Name="LoginButton" 
+                            Text="Sign In" 
+                            BackgroundColor="#4CAF50" 
+                            TextColor="White" 
+                            CornerRadius="8" 
+                            HeightRequest="50"
+                            FontAttributes="Bold"
+                            Clicked="OnLoginClicked" />
+                    
+                    <!-- Loading Indicator -->
+                    <ActivityIndicator x:Name="LoadingIndicator" 
+                                       IsVisible="False" 
+                                       IsRunning="False" 
+                                       Color="#4CAF50" />
+                </StackLayout>
+            </Frame>
+
+            <!-- Demo Credentials -->
+            <Frame BackgroundColor="#2d2d2d" 
+                   BorderColor="#404040" 
+                   CornerRadius="10" 
+                   Padding="20">
+                
+                <StackLayout Spacing="15">
+                    <Label Text="Demo Credentials" 
+                           FontSize="16" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           HorizontalOptions="Center" />
+                    
+                    <Label Text="Email: demo@crypto.com" 
+                           TextColor="#B0B0B0" 
+                           FontSize="12" 
+                           HorizontalOptions="Center" />
+                    <Label Text="Password: password123" 
+                           TextColor="#B0B0B0" 
+                           FontSize="12" 
+                           HorizontalOptions="Center" />
+                    
+                    <Button Text="Use Demo Login" 
+                            BackgroundColor="#FF9800" 
+                            TextColor="White" 
+                            CornerRadius="8" 
+                            HeightRequest="40"
+                            Clicked="OnDemoLoginClicked" />
+                </StackLayout>
+            </Frame>
+
+            <!-- Footer -->
+            <Label Text="© 2025 Crypto DCA Calculator" 
+                   FontSize="12" 
+                   TextColor="#808080" 
+                   HorizontalOptions="Center" 
+                   Margin="0,20,0,0" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

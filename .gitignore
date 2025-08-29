@@ -1,0 +1,67 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+
+# Visual Studio
+.vs/
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NuGet Packages
+*.nupkg
+**/packages/*
+!**/packages/build/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+**/Properties/launchSettings.json
+
+# Mac
+.DS_Store
+
+# Android
+*.apk
+*.ap_
+*.dex
+*.class
+local.properties
+proguard/
+
+# iOS
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# JetBrains Rider
+.idea/
+
+# VS Code
+.vscode/
