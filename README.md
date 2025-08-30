@@ -2,6 +2,24 @@
 
 A comprehensive mobile MAUI application that helps users visualize how their cryptocurrency portfolio would grow over time using Dollar Cost Averaging (DCA) investment strategy, with real-time market data and competitive analysis.
 
+<img width="33%" alt="Screenshot_1756564825" src="https://github.com/user-attachments/assets/226c47ff-3c1f-4ba0-9618-2715f10a36c4" />
+
+<img width="33%" alt="Screenshot_1756564840" src="https://github.com/user-attachments/assets/50155743-50ee-42a2-8d7e-c094628eff2b" />
+
+<img width="33%" alt="Screenshot_1756567617" src="https://github.com/user-attachments/assets/fde2672a-9830-4d9b-9441-55c640fca1dc" />
+
+<img width="33%" alt="Screenshot_1756564900" src="https://github.com/user-attachments/assets/78722e8d-5418-4bc1-bcd3-6bb0c039a18d" />
+
+<img width="33%" alt="Screenshot_1756565858" src="https://github.com/user-attachments/assets/8d25f64b-d724-47bc-88b0-626a8391c04f" />
+
+<img width="33%" alt="Screenshot_1756565882" src="https://github.com/user-attachments/assets/b12a4065-46c3-4905-8abb-db030871b5d1" />
+
+<img width="33%" alt="Screenshot_1756566452" src="https://github.com/user-attachments/assets/a3ca05ef-5858-45bb-993f-4b4e408f4254" />
+
+<img width="33%" alt="Screenshot_1756564972" src="https://github.com/user-attachments/assets/48e8c0f7-edb6-4ef5-a422-d85bce41bba8" />
+
+<img width="33%" alt="Screenshot_1756566845" src="https://github.com/user-attachments/assets/f8657a70-1ac0-46b8-b273-9a0bc092603c" />
+
 ## 🌟 Key Features
 
 ### 🔐 Authentication
