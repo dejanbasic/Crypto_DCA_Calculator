@@ -6,13 +6,6 @@
              x:Class="CryptoDCACalculator.Views.DCACalculatorPage"
              Title="DCA Calculator"
              BackgroundColor="#1a1a1a">
-
-    <ContentPage.Resources>
-        <Style x:Key="ChartAxisLabelStyle" TargetType="Label">
-            <Setter Property="TextColor" Value="#B0B0B0" />
-            <Setter Property="FontSize" Value="10" />
-        </Style>
-    </ContentPage.Resources>
              
     <ScrollView>
         <Grid RowDefinitions="Auto,Auto,*">
@@ -266,20 +259,29 @@
                             <chart:SfCartesianChart.Legend>
                                 <chart:ChartLegend x:Name="ChartLegend" 
                                                    IsVisible="True" 
-                                                   Placement="Bottom" 
-                                                   LabelStyle="{StaticResource ChartAxisLabelStyle}" />
+                                                   Placement="Bottom">
+                                    <chart:ChartLegend.LabelStyle>
+                                        <chart:ChartLegendLabelStyle TextColor="#B0B0B0" FontSize="10" />
+                                    </chart:ChartLegend.LabelStyle>
+                                </chart:ChartLegend>
                             </chart:SfCartesianChart.Legend>
                             
                             <chart:SfCartesianChart.XAxes>
                                 <chart:DateTimeAxis x:Name="ChartXAxis" 
-                                                    ShowMajorGridLines="True"
-                                                    LabelStyle="{StaticResource ChartAxisLabelStyle}" />
+                                                    ShowMajorGridLines="True">
+                                    <chart:DateTimeAxis.LabelStyle>
+                                        <chart:ChartAxisLabelStyle TextColor="#B0B0B0" FontSize="10" />
+                                    </chart:DateTimeAxis.LabelStyle>
+                                </chart:DateTimeAxis>
                             </chart:SfCartesianChart.XAxes>
                             
                             <chart:SfCartesianChart.YAxes>
                                 <chart:NumericalAxis x:Name="ChartYAxis" 
-                                                     ShowMajorGridLines="True"
-                                                     LabelStyle="{StaticResource ChartAxisLabelStyle}" />
+                                                     ShowMajorGridLines="True">
+                                    <chart:NumericalAxis.LabelStyle>
+                                        <chart:ChartAxisLabelStyle TextColor="#B0B0B0" FontSize="10" />
+                                    </chart:NumericalAxis.LabelStyle>
+                                </chart:NumericalAxis>
                             </chart:SfCartesianChart.YAxes>
                             
                         </chart:SfCartesianChart>
